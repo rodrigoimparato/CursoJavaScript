@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+    <script src="personalizado.js"></script>
+    <style>
+        .estilo{
+            background-color: #00008b;
+            color: #fff;
+            width: 150px;
+            height: 50px;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    Um evento pode ser algo que o navegador faz ou algo que usuário faz.
+
+    <h2>Evento onClick</h2>
+    <button onclick="loadText()">Carregar paragrafo</button>
+    <p id="conteudo"></p>
+
+    <h2>Eventos - onMouseOver onMouseOut</h2>
+    <div onmouseover="mouseOuver()" onmouseout="mouseOut()" class="estilo" id="mouseAlt">
+        Passe o Mouse
+    </div>
+
+    <h2>Eventos - onChange onKeyUp</h2>
+    <h3>O onChange é quando o usuario faz um evento qualquer.</h3>
+    <form>
+        Nome: <input type="text" name="nome" id="nome" onchange="textUpperCase()"><br><br>
+    
+        <h3>onKeyUp</h3>
+        <span id="erroSenha"></span><br>
+        Senha: <input type="password" name="senha" id="senha"
+                onkeyup="validarSenha()"><br>
+    </form>
+
+</body>
+</html>

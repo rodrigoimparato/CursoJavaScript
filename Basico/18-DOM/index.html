@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script src="personalizado.js"></script>
+    <style>
+        .estilo{
+            background-color: #00008b;
+            color: #fff;
+            width: 150px;
+            height: 50px;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    DOM é a abreviação de Document Object Model.<br>
+    Ele representa os objetos de uma página HTML em forma de árvore.<br>
+    DOM é importanta pois através dele que acessamos os elementos dentro de uma página HTML.<br>
+    Permite que programa e scripts acessem e atualizem dinamicamente o conteúdo, a estrutura e o estilo do documento.<br><br>
+
+
+    <h2>Árvore DOM</h2>
+    <img src="árvoreDOM.gif">
+    
+    <hr>
+    <p id="exemplo-um"></p>
+
+    <h3>getElementsByName para ler elementos de um formulário</h3>
+    <input type="checkbox" name="curso" value="html">HTML
+    <input type="checkbox" name="curso" value="css">CSS
+    <input type="checkbox" name="curso" value="js">JavaScript
+    <button onclick="exemploDois()">Exemplo 2</button>
+
+    <hr>
+    <h3>getElementsTagName para ler todos elementos tag</h3>
+    <span>Span Index 0</span>
+    <span>Span Index 1</span>
+    <span>Span Index 2</span>
+    <button onclick="exemplo3()">Exemplo3</button>
+
+    <hr>
+    <h3>getElementsTagName para ler a lista</h3>
+    <ul>
+        <li>Index 0</li>
+        <li>Index 1</li>
+        <li>Index 2</li>
+        <li>Index 3</li>
+        <li>Index 4</li>
+        <li>Index 5</li>
+        <li>Index 6</li>
+    </ul>
+    <button onclick="exemplo4()">Exemplo4</button>
+
+    <hr>
+    <h3>getElementsClass para ler a lista</h3>
+    <p class="produto">Produto 1</p>
+    <p class="produto">Produto 2</p>
+    <p class="produto">Produto 3</p>
+    <p class="produto">Produto 4</p>
+    <p class="produto">Produto 5</p>
+    <p class="produto">Produto 6</p>
+    <button onclick="exemplo5()">Exemplo5</button>
+</body>
+</html>

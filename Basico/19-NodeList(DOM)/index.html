@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeList</title>
+    <script src="personalizado.js"></script>
+    
+</head>
+<body>
+    <h2>o que é NodeList DOM</h2>
+    NodeList(DOM) são as funções que acessam elementos da página HTML que retorno SEMPRE um conjunto de elementos.<br>
+    O conjunto de elementos retornado  é o NodeList.<br>
+
+    <h2>1 forma de ler a lista</h2>
+    nomeElemento.length;
+
+    <h2>2 forma uma posição especifica da lista</h2>
+    nomeElemento[0]['value'];
+    
+    
+    <hr>
+    <p id="exemplo-um"></p>
+
+    <h3>getElementsByName para ler elementos de um formulário</h3>
+    <input type="checkbox" name="curso" value="html">HTML
+    <input type="checkbox" name="curso" value="css">CSS
+    <input type="checkbox" name="curso" value="js">JavaScript
+    <button onclick="exemploDois()">Exemplo 2</button>
+
+    <hr>
+    <h3>getElementsTagName para ler todos elementos tag</h3>
+    <span>Span Index 0</span>
+    <span>Span Index 1</span>
+    <span>Span Index 2</span>
+    <button onclick="exemplo3()">Exemplo3</button>
+
+    <hr>
+    <h3>getElementsTagName para ler a lista</h3>
+    <ul>
+        <li>Index 0</li>
+        <li>Index 1</li>
+        <li>Index 2</li>
+        <li>Index 3</li>
+        <li>Index 4</li>
+        <li>Index 5</li>
+        <li>Index 6</li>
+    </ul>
+    <button onclick="exemplo4()">Exemplo4</button>
+
+    <hr>
+    <h3>getElementsClass para ler a lista</h3>
+    <p class="produto">Produto 1</p>
+    <p class="produto">Produto 2</p>
+    <p class="produto">Produto 3</p>
+    <p class="produto">Produto 4</p>
+    <p class="produto">Produto 5</p>
+    <p class="produto">Produto 6</p>
+    <button onclick="exemplo5()">Exemplo5</button>
+</body>
+</html>
